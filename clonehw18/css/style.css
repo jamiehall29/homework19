@@ -1,0 +1,381 @@
+/* style */ 
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #DDD7CB;
+    margin: 0;
+    line-height: 1.6;
+}
+
+section {
+    margin: 3em;
+    padding: 2em 2em;
+    background: rgba(247, 243, 240, 0.25);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.12);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* navigation */
+
+.header {
+    height: 190px;
+    margin-top: 0;
+    padding-top: 1em;
+    background: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: top;
+}
+
+ul {
+    display: flex;
+    width: 400px;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+li {
+    text-decoration: none;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12);
+}
+
+.logo {
+    background: radial-gradient(50% 50% at 50% 50%, #5D7466 76.56%, rgba(93, 116, 102, 0) 100%);
+}
+
+.subheader h1 {
+    text-align: center;
+    margin: 0;
+
+}
+
+/* hero */
+
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background: rgba(247, 243, 240, 0.25);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.12);
+}
+
+.hero-text {
+    justify-self: right;
+    margin: 2em;
+    padding: 2em;
+}
+
+.text-container {
+    line-height: 0%;
+    align-self: center;
+    padding-left: 5em;
+}
+
+.hero-text h1 {
+    margin-top: 12px;
+    margin-bottom: 14px;
+}
+
+strong {
+    font-size: small;
+    font-weight:400;
+    text-transform: uppercase;
+}
+
+.hero-pic {
+    justify-self: right;
+    margin: auto;
+}
+
+@media (max-width: 600px) {
+    .hero-section {
+        display: grid;
+        grid-template-areas: 
+            "hero-text"
+            "hero-img";
+        grid-template-columns: min-content max-content;
+    }
+}
+
+/* work */
+
+.my-work {
+    display: grid;
+    gap: 1em;
+    margin: 3em;
+}
+
+.case-studies {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "portfolio-a portfolio-b";
+    gap: 2em;
+    padding: 1em;
+    height: auto;
+}
+
+.case-one {
+   justify-self: center;
+   text-align: center;
+}
+
+.case-one img {
+    margin: auto;
+
+}
+
+.project-title {
+    vertical-align: top;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+
+.case-two {
+    justify-self: center;
+    text-align: center;
+}
+
+.mydiypic {
+    height: 422px;
+    margin: auto;
+}
+
+.work-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "work-hist work-header";
+    align-content: center;
+}
+
+.work-hist {
+    padding-left: 4em;
+    padding-right: 3em;
+    
+}
+
+.work-header {
+    text-align: center;
+    vertical-align: top;
+    margin: auto;
+}
+
+.button {
+    border-radius: 50%;
+    padding: 1em;
+    margin: 1em;
+    background-color: #5D7466;
+    color:#DDD7CB;
+    border-style: double;
+    border-width: 0.5px;
+    font-family: 'Aktiv Grotesk Ex';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+/* about */
+
+.about-me {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+}
+
+.about-text {
+    text-align: justify;
+    margin: 2em;
+    padding: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.about-img {
+    align-self: center;
+    justify-self: right;
+    margin: 2em;
+    padding: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.nadja {
+    width: 350px;
+    height: 410px;
+}
+
+/* skills */
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2em;
+    margin: 1em;
+}
+
+.skill {
+    text-align: center;
+    justify-content: center;    
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.skills-container {
+    background: rgba(247, 243, 240, 0.25);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.12);
+    height: auto;
+}
+
+.skills p {
+    text-align: center;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.skills-header {
+    text-align: center;
+    vertical-align: top;
+    margin: auto 0;
+}
+
+/* contact */
+
+.contact-me {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.contact-info {
+    text-align: justify;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.contact-links a {
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.contact-links {
+    font-weight: bold;
+    font-family: 'Aktiv Grotesk Ex';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align:justify;
+}
+
+.contact-header {
+    margin: 0px;
+}
+
+/* footer */
+
+.footer {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    margin-top: 3em;
+    padding: 2em;
+    background-color: #807E7C;
+    height: 200px;
+    align-content: center;
+}
+
+.site-links {
+    justify-self: center;
+    display: inline-flex;
+    gap: 3em;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+.social-links {
+    justify-self: center;
+    display: inline-flex;
+    gap: 3em;
+    font-weight: bold;
+    font-family: 'Aktiv Grotesk Ex';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.footer-info {
+    text-align: center;
+    align-content: baseline;
+}
+
+/* text */
+
+li {
+    font-weight: bold;
+    font-family: 'Aktiv Grotesk Ex';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+h1 {
+    font-family: 'AWConqueror Std Didot';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 1.6;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.21);
+}
+
+h3 {
+    font-family: 'Aktiv Grotesk Ex';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    text-transform: uppercase;
+}
+
+a:-webkit-any-link {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+}
+
+p {
+    font-family: 'Aktiv Grotesk Ex';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;    
+    text-decoration: none;
+}
