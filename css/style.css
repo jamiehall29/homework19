@@ -1,5 +1,9 @@
 /* style */ 
 
+html {
+    scroll-behavior: smooth;
+  }
+
 *,
 *::before,
 *::after {
@@ -216,6 +220,7 @@ strong {
 .nadja {
     width: 350px;
     height: 410px;
+    margin: auto;
 }
 
 /* skills */
@@ -299,6 +304,7 @@ strong {
     margin-top: 3em;
     padding: 2em;
     background-color: #807E7C;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     height: 200px;
     align-content: center;
 }
